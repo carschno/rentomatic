@@ -8,7 +8,7 @@ No external library dependencies.
 
 ## Usage
 
-Run:
+Run in the `rentomatic` directory:
 
 ```bash
 python rent.py
