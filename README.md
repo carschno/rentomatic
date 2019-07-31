@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Python 3.x required.
+Tested with Python 3.x.
 
 No external library dependencies.
 
@@ -24,14 +24,28 @@ plus one random transport that is already rented out (i.e. not available).
 The interactive interface allows to rent and return transports through their ids.
 All commands are available through the `help` command.
 
+Done
+*  Implementation with user textual interaction
+*  Vehicle renting with payments (no validity checks)
+*  Different types of transports (each as separate sub-class of `Transport` class)
+*  Inventory of existing, available transports
+*  Add a random vehicle that is rented out (not available)
+*  Ability to return a rented vehicle (mileage not added)
 
-Not done:
+Not done within 2 hours timeframe:
 *  Money handling (change, check for price vs. available money)
-*  UML diagrams
+*  UML diagrams (added later: see [classes.png](classes.png) and [packages.png](packages.png))
 *  Unit test
 
 Additional ideas for future improvements:
 *  Make output more readable
-*  Make IDs shorter for readability
+*  Make IDs shorter for usability
 *  Enable interaction with multiple users
 *  Facilitate packaging with Python `setuptools`
+*  Allow specification of initial inventory through command line interface or configuration file
+
+## Structure
+
+![Classes](classes.png)
+
+![Packages](packages.png)
