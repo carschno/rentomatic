@@ -1,7 +1,7 @@
 class Transport:
     def __init__(self, price: float, seats: int, name: str = "", mileage: int = 0):
         self._price = price
-        self._capacity = seats
+        self._seats = seats
         self._available = True
         self._name = name if name else type(self).__name__
         self._mileage = mileage
@@ -12,8 +12,8 @@ class Transport:
         return self._price
 
     @property
-    def capacity(self) -> int:
-        return self._capacity
+    def seats(self) -> int:
+        return self._seats
 
     @property
     def name(self) -> str:
@@ -39,11 +39,11 @@ class Transport:
         return """
         Type:   {}
         Price:  {}
-        Capacity:   {}
+        Seats:   {}
         Mileage:    {}
         Available:  {}
         ID: {}
-        """.format(self.name, self.price, self.capacity, self.mileage, self.available, self.id)
+        """.format(self.name, self.price, self.seats, self.mileage, self.available, self.id)
 
 
 class Bike(Transport):
