@@ -86,10 +86,10 @@ class Rent:
                     if t_id is not None:
                         try:
                             transport = next((t for t in self._rented if t.id == t_id))
+                            self._rentomatic.return_transport(transport)
+                            self._rented.remove(transport)
                         except StopIteration:
                             print("You have not rented a transport with ID '{}'".format(t_id))
-                        self._rentomatic.return_transport(transport)
-                        self._rented.remove(transport)
                 else:
                     print("Unknown command. Type 'help' to see valid commands.")
             except Exception as e:

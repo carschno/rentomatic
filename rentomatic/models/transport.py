@@ -44,3 +44,23 @@ class Transport:
         Available:  {}
         ID: {}
         """.format(self.name, self.price, self.capacity, self.mileage, self.available, self.id)
+
+
+class Bike(Transport):
+    def __init__(self, price: float = 5.0, seats: int = 1):
+        super().__init__(price, seats)
+
+
+class Boat(Transport):
+    def __init__(self, price: float = 100.0, seats: int = 8):
+        super().__init__(price, seats, "boat")
+
+
+class Car(Transport):
+    def __init__(self, price: float = 100.0, seats: int = 5):
+        super().__init__(price, seats)
+
+
+class Motorbike(Transport):
+    def __init__(self, price: float = 75.0, seats: int = 2):
+        super().__init__(price, seats)

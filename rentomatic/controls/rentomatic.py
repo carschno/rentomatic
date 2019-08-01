@@ -1,13 +1,8 @@
 import logging
-from typing import List, Iterable, Tuple
-
 import random
+from typing import List, Tuple
 
-from rentomatic.models.bike import Bike
-from rentomatic.models.boat import Boat
-from rentomatic.models.car import Car
-from rentomatic.models.motorbike import Motorbike
-from rentomatic.models.transport import Transport
+from rentomatic.models.transport import Transport, Bike, Boat, Car, Motorbike
 
 
 class Rentomatic:
