@@ -34,6 +34,7 @@ class Rentomatic:
     def rent(self, id: int) -> Transport:
         transport = self.get_by_id(id)
         if transport.available:
+            transport.available = False
             return transport
         else:
             raise UnavailableError(transport)
