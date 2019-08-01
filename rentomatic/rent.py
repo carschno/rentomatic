@@ -90,6 +90,8 @@ class Rent:
                             self._rented.remove(transport)
                         except StopIteration:
                             print("You have not rented a transport with ID '{}'".format(t_id))
+                elif command == 'exit':
+                    pass
                 else:
                     print("Unknown command. Type 'help' to see valid commands.")
             except Exception as e:
