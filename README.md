@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/carschno/rentomatic.svg?branch=fixes)](https://travis-ci.org/carschno/rentomatic)
+[![Build Status](https://travis-ci.org/carschno/rentomatic.svg?branch=master)](https://travis-ci.org/carschno/rentomatic)
 
 # Rent-o-matic
 
