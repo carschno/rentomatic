@@ -1,8 +1,10 @@
+[![Build Status](https://travis-ci.org/carschno/rentomatic.svg?branch=master)](https://travis-ci.org/carschno/rentomatic)
+
 # Rent-o-matic
 
 ## Prerequisites
 
-Tested with Python 3.x.
+Tested with Python 3.6, 3.7 (see [Travis CI configuration](.travis.yml))
 
 No external library dependencies.
 
